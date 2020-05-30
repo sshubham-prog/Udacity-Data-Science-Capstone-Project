@@ -33,3 +33,22 @@ correspond to an offer
 
 - transcript.json - This contains records for transactions, offers received, offers viewed, and offers completed. The transcript dataset has 306534 rows, each corresponding to an event
 
+### Results
+
+The baseline model accuracy and f1-score was 0.47 & 0.6 respectively
+The random forest model has a better F1-score compared to logistic regression and Adaboost model.
+
+Please find the accuracy by each model below:
+- Baseline model: 047
+- Logistic Classifier: 0.56
+- Adaboost Classifier: 0.73
+- Random Forest Classifer: 0.72
+
+Random forest classifier has similar performance conmpared to AdaBoost classifier. AdaBoost classifer have higher chances of overfitting the training data and requires additional effort to tune. A random forest classifier is less prone to overfitting because it constructs decision trees from random training data samples. Hence we are planning to go ahead with random forest model as final model.
+
+The top features from the feature importance of random forest models are:
+Duration days, Difficulty, 2018 (the year when became a member), discount, social, web & BOGO
+
+A summary of the results and the analysis can be found on the link mentioned here: 
+
+
