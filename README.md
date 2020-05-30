@@ -49,6 +49,10 @@ Random forest classifier has similar performance conmpared to AdaBoost classifie
 The top features from the feature importance of random forest models are:
 Duration days, Difficulty, 2018 (the year when became a member), discount, social, web & BOGO
 
-A summary of the results and the analysis can be found on the link mentioned here: 
+A summary of the results and the analysis can be found on the link mentioned here: https://medium.com/@satyam.shubham19/predicting-starbucks-customer-offer-conversion-d428bf3c1100
+
+### Licensing, Authors and Acknowledgement
+
+Must give credit to Stakbucks for the data
 
 
