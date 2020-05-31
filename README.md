@@ -21,7 +21,7 @@
 - joblib
 
 ### Project Motivation
-It is the Starbuck's Capstone Challenge of the Data Scientist Nanodegree in Udacity. We get the dataset from the program that creates the data simulates how people make purchasing decisions and how those decisions are influenced by promotional offers. We want to make a recommendation engine that recommends Starbucks which offer should be sent to a particular customer.The goal of this project is to build a model that predicts how will the customer respond will to an offer.
+This post serves as final submission to the Udacity Data Science Nano Degree Program with the dataset which mimicks Starbucks rewards mobile app. We get the dataset from the program that creates the data simulates how people make purchasing decisions and how those decisions are influenced by promotional offers. The objective is to build a machine learning model that recommends Starbucks which offer should be sent to a particular customer based on their probability of conversion.
 
 ### Dataset Used
 The data is contained in three files:
@@ -35,16 +35,17 @@ correspond to an offer
 
 ### Results
 
-The baseline model accuracy and f1-score was 0.47 & 0.6 respectively
-The random forest model has a better F1-score compared to logistic regression and Adaboost model.
+The baseline accuracy in the data is 0.47 suggesting the random chance of a customer getting an offer and responding to it is 47%.
+The random forest model has a good accuracy and best F1-score on test data compared to logistic, naive and Adaboost model.
 
 Please find the accuracy by each model below:
 - Baseline model: 047
 - Logistic Classifier: 0.56
+- naive bayes: 0.68
 - Adaboost Classifier: 0.73
 - Random Forest Classifer: 0.72
 
-Random forest classifier has similar performance conmpared to AdaBoost classifier. AdaBoost classifer have higher chances of overfitting the training data and requires additional effort to tune. A random forest classifier is less prone to overfitting because it constructs decision trees from random training data samples. Hence we are planning to go ahead with random forest model as final model.
+We further looked into f1-score and the analysis suggests that a random forest model has the best F1-score on test data. Comparing the performance of training and test data across f1-score, precision, and recall suggests that there is no overfitting in the constructed model.
 
 The top features from the feature importance of random forest models are:
 Duration days, Difficulty, 2018 (the year when became a member), discount, social, web & BOGO
